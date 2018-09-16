@@ -1,5 +1,5 @@
 # NB-BlackoutWins
-Simple counter extension for Call of Duty Blackout wins for Nightbot for Twitch, origionally developed for KYR_SP33DY.
+Simple counter extension for Call of Duty Blackout wins for Nightbot for Twitch, origionally developed for KYR_SP33DY. Test it out at [KYR_SP33DY's channel](https://twitch.tv/KYR_SP33DY) using the `!bowins` command.
 
 ## Setup
 1. Open the [Nightbot Custom Command Dashboard](https://beta.nightbot.tv/commands/custom).
