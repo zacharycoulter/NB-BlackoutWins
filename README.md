@@ -6,7 +6,7 @@ Simple counter extension for Call of Duty Blackout wins for Nightbot for Twitch,
 2. Create a new command
 3. Use the [UrlFetch](https://docs.nightbot.tv/commands/variables/urlfetch) command variable to call one of the endpoints below.
 4. Repeat for all endpoints you want
-5. Example configuration: [Imgur Link](https://i.imgur.com/epdFFnF.png)
+5. Example configuration: ![alt text](https://i.imgur.com/epdFFnF.png "Example configuration")
 6. Profit!
 
 ## Endpoints
