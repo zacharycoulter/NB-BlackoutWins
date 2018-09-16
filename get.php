@@ -1,0 +1,1 @@
+<?php echo (int)file_get_contents('./wins.txt');
