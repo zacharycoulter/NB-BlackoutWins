@@ -15,3 +15,7 @@ These endpoints must be called by Nightbot itself. * = moderator/owner access on
 2. *Add one win to the total win count: [https://bo-wins.apez.org/add](https://bo-wins.apez.org/add)
 3. *Remove one win from the total win count: [https://bo-wins.apez.org/remove](https://bo-wins.apez.org/remove)
 4. *Set the total win count back to zero: [https://bo-wins.apez.org/clear](https://bo-wins.apez.org/clear)
+
+## Known Streamers
+* KYR_SP33DY
+Want to be added to the list? Tweet me [https://twitter.com/zachary_coulter](@zachary_coulter).
