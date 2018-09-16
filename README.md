@@ -18,6 +18,6 @@ These endpoints must be called by Nightbot itself. * = moderator/owner access on
 
 ## Known Streamers
 * KYR_SP33DY
---
+
 
 Want to be added to the list? Tweet me [https://twitter.com/zachary_coulter](@zachary_coulter).
