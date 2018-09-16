@@ -4,8 +4,10 @@ if (isset($_SERVER["HTTP_NIGHTBOT_USER"]) && isset($_SERVER['HTTP_NIGHTBOT_CHANN
     parse_str($_SERVER['HTTP_NIGHTBOT_CHANNEL'], $nightbotChannel);
 
     if ($nightbotUser['userLevel'] == "moderator" || $nightbotUser['userLevel'] == "owner") {
-        echo "0";
-        file_put_contents("wins-" . $nightbotChannel["name"] + ".txt", "0");
+        $allWins = json_decode(file_get_contents("wins.json"), true);
+        $allWins[$nightbotChannel['name']] = 0;
+        echo $allWins[$nightbotChannel['name']];
+        file_put_contents("wins.json", json_encode($allWins));
         return;
     }
 }
