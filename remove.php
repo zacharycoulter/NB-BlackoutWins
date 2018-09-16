@@ -1,13 +1,21 @@
 <?php
-if (isset($_SERVER["HTTP_NIGHTBOT_USER"])) {
-    parse_str($_SERVER['HTTP_NIGHTBOT_USER'], $nightbotHeader);
+if (isset($_SERVER["HTTP_NIGHTBOT_USER"]) && isset($_SERVER['HTTP_NIGHTBOT_CHANNEL'])) {
+    parse_str($_SERVER['HTTP_NIGHTBOT_USER'], $nightbotUser);
+    parse_str($_SERVER['HTTP_NIGHTBOT_CHANNEL'], $nightbotChannel);
 
-    if ($nightbotHeader['userLevel'] == "moderator" || $nightbotHeader['userLevel'] == "owner") {
-        $wins = (int)file_get_contents('./wins.txt');
-        $wins--;
+    if ($nightbotUser['userLevel'] == "moderator" || $nightbotUser['userLevel'] == "owner") {
+        $wins = 0;
+
+        if (file_exists("wins-" . $nightbotChannel["name"] + ".txt")) {
+            $wins = (int)file_get_contents("wins-" . $nightbotChannel["name"] + ".txt");
+        }
+
+        if ($wins > 0) {
+            $wins--;
+        }
 
         echo $wins;
-        file_put_contents('./wins.txt', $wins);
+        file_put_contents("wins-" . $nightbotChannel["name"] + ".txt", $wins);
         return;
     }
 }
