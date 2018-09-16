@@ -6,8 +6,7 @@ if (isset($_SERVER["HTTP_NIGHTBOT_USER"]) && isset($_SERVER['HTTP_NIGHTBOT_CHANN
     if ($nightbotUser['userLevel'] == "moderator" || $nightbotUser['userLevel'] == "owner") {
         $allWins = json_decode(file_get_contents("wins.json"), true);
 
-        if(isset($allWins[$nightbotChannel['name']])) {
-            $wins = $allWins[$nightbotChannel['name']];
+        if(array_key_exists($nightbotChannel['name'], $allWins)) {
             if($allWins[$nightbotChannel['name']] > 0) {
                 $allWins[$nightbotChannel['name']]--;
             }
