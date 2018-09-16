@@ -20,4 +20,4 @@ These endpoints must be called by Nightbot itself. * = moderator/owner access on
 * KYR_SP33DY
 
 
-Want to be added to the list? Tweet me [https://twitter.com/zachary_coulter](@zachary_coulter).
+Want to be added to the list? Tweet me [@zachary_coulter](https://twitter.com/zachary_coulter).
